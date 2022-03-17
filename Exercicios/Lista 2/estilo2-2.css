@@ -1,0 +1,30 @@
+
+th{
+    background-color: #78b200;
+    color: white;
+}
+td{ 
+    margin-bottom: 10px;
+}
+table{
+    border-spacing: 0;
+    font-family: Arial;
+    font-size: 12px;
+    width: 600px;
+}
+tr:nth-child(odd){
+    background-color: rgb(229, 245, 245) ;
+}
+th,td{
+    text-align: left;
+    padding: 10px;
+}
+.cidade{
+    color: #0D5188;
+}
+.posicao{
+    width: 5%;
+}
+.qtd{
+    width: 15%;
+}
