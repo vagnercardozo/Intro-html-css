@@ -1,0 +1,11 @@
+.quadro{
+    width: 600px;
+    height: 80px;
+    border: 1px solid black;
+    text-align: center;
+    
+}
+.quadro p{
+    color:rgb(2, 2, 105);
+    font-size: 11px;
+}
