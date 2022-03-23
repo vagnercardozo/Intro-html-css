@@ -1,0 +1,62 @@
+.bordinha{
+    border: 1px solid black;
+    
+}  
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+        "logo header header header header header"
+        "nav div div div div div"
+        "footer footer footer footer footer footer"
+        ;
+}
+.logo{
+    grid-area: logo;
+    background-color: brown;
+}
+header{
+    display: flex;
+    height: 15vh;
+    grid-area: header;
+    background-color: bisque;
+}   
+nav{
+    height: 70vh;
+    grid-area: nav;
+    background-color: blueviolet;
+}
+footer{
+    height: 15vh;
+    grid-area: footer;
+    background-color: blue;
+}   
+.principal{
+    grid-area: div;
+    height: 70vh; 
+}
+.conteiner{
+    margin: 1%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: antiquewhite ;  
+}
+.conteudo{
+    margin: 1%;
+    flex-grow: 1;
+    background-color: aqua;
+    flex-basis: 20%;
+    border: 1px solid black;
+}
+.menuEsquerda{
+    width:  20%;
+    height: 15vh;
+    text-decoration: none;
+}
+.menuDireita{
+    width:  20%;
+    height: 15vh;
+    text-decoration: none   ;
+}
