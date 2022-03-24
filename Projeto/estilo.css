@@ -1,0 +1,95 @@
+.bordinha{
+    border: 1px solid rgb(0, 117, 39);
+    
+}  
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+        "header header header header header header"
+        "nav div div div div div"
+        "footer footer footer footer footer footer"
+        ;
+}
+.logo{
+    width: 15%;
+
+}
+header{
+    display: flex;
+    height: 15vh;
+    grid-area: header;
+    
+}   
+nav{
+    height: 70vh;
+    grid-area: nav;
+    border-right: 1px solid rgb(0, 117, 39);
+}
+footer{
+    height: 15vh;
+    grid-area: footer;
+}   
+.principal{
+    grid-area: div;
+    height: 70vh; 
+}
+.conteiner{
+    margin: 1%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(191, 230, 236) ;  
+}
+.conteudo{
+    margin: 1%;
+    flex-grow: 1;
+    flex-basis: 20%;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+.menuEsquerda{
+    flex-basis: 30%;
+    text-decoration: none;
+}
+.menuDireita{
+    flex-basis: 30%;
+    text-decoration: none;
+}
+.menuEsquerda li{
+    display: inline;
+    margin: 2%;
+    
+}
+.menuDireita li{
+    display: inline;
+    margin: 2%;
+    
+}
+.menu{
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+.menu ul{
+    margin-top: 13%;
+    display: flex;
+    align-items: center;
+}
+.menuDireita ul{
+    margin-left: 50%;
+}
+nav ul{
+    text-align: center;
+    
+}
+nav li{
+    list-style-type: none;
+    line-height: 3;
+}
+img{
+    height: 100px;
+    width: 200px;
+}
