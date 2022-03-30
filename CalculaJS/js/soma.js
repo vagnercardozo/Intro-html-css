@@ -1,5 +1,9 @@
-function soma(a,b){
-    return a+b;
+exports.soma = (a,b) => {
+    return a + b;
 }
-
-module.exports = soma;
+exports.subtracao = (a,b) =>{   
+    return a - b; 
+}
+exports.multiplicacao = (a,b) =>{   
+    return a * b; 
+}
