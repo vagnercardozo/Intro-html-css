@@ -1,14 +1,13 @@
-export {soma,subtracao,multiplicacao,divisao} 
+export {calculaDelta,calculaBhaskara} 
 
-function soma(a,b){
-    return a + b;
+function calculaDelta(a,b,c) {
+    return (Math.pow(b,2))-4*a*c;
 }
-function subtracao(a,b){   
-    return a - b; 
-}
-function multiplicacao(a,b){   
-    return a * b; 
-}
-function divisao(a,b){
-    return a / b; 
+function calculaBhaskara(a,b,delta){
+    let x1,x2;
+
+    x1 = (((-b) - (Math.sqrt(delta))) / (2*a)) 
+    x2 = (((-b) + (Math.sqrt(delta))) / (2*a)) 
+
+    return {x1,x2}
 }
