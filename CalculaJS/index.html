@@ -5,29 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Bhaskara</title>
-    <link rel="stylesheet" href="estilo.css">
-    
+    <link rel="stylesheet" href="estilo.css">  
 </head>
 <body>
-    <h3>Using CSS to style an HTML Form</h3>
+    
+    <div id="principal">
+        <h3 id="titulo">Calculadora de Bhaskara</h3>
+        <label for="fname">Insira o A</label>
+        <input type="text" id="a" name="firstname" placeholder="A">
 
-<div>
-    <label for="fname">Insira o A</label>
-    <input type="text" id="a" name="firstname" placeholder="A">
+        <label for="lname">Insira o B</label>
+        <input type="text" id="b" name="lastname" placeholder="B">
 
-    <label for="lname">Insira o B</label>
-    <input type="text" id="b" name="lastname" placeholder="B">
-
-    <label for="lname">Insira o C</label>
-    <input type="text" id="c" name="lastname" placeholder="C">
-  
-    <input type="submit" value="Calcular" id="calcular">
-</div>
-    <input id="a" placeholder="Insira o A" type="text"> 
-    <input id="b" placeholder="Insira o B" type="text">
-    <input id="c" placeholder="Insira o C" type="text">
-    <h1 id="x1"></h1>
-    <h1 id="x2"></h1>
-    <script type="module" src="index.js"></script>
+        <label for="lname">Insira o C</label>
+        <input type="text" id="c" name="lastname" placeholder="C">
+    
+        <input type="submit" value="Calcular" id="calcular">
+        <script type="module" src="index.js"></script>
+    </div>
+    <div id="resultado">
+        <h3 id="titulo">Resultado Bhaskara</h3>
+        <h5>X1</h5>
+        <h5>=</h5>
+        <h5>X</h5>
+        <h5>X2</h5>
+        <h5>=</h5>
+        <h5>X</h5>
+        <input type="submit" value="Calcular novamente" id="exibirNovamente">
+        <script type="module" src="index.js"></script>
+    </div>
 </body>
 </html>     

@@ -1,14 +1,25 @@
 import { calculaBhaskara, calculaDelta } from './js/calc.js'
 
+document.getElementById('calcular').addEventListener('click', calcular);
+document.getElementById('exibirNovamente').addEventListener('click', exibirNovamente);
+
+
+window.onload = function() {
+    document.getElementById('resultado').style.display = "none"
+};
 function calcular(){
     let a = document.getElementById('a').value;
     let b = document.getElementById('b').value;
     let c = document.getElementById('c').value;
     let delta = calculaDelta(a,b,c);
-    console.log(delta);
     let bhaskara = calculaBhaskara(a,b,delta);
-    console.log(bhaskara);
-    document.getElementById('x1').innerHTML = '<b>'+bhaskara.x1+'</b>'
-    document.getElementById('x2').innerHTML = '<b>'+bhaskara.x2+'</b>'
+    document.getElementById('principal').style.display = "none"
+    exibirCalculo()
 }
-document.getElementById('calcular').addEventListener('click', calcular);
+function exibirCalculo(){
+    document.getElementById('resultado').style.display = "block"
+}
+function exibirNovamente(){
+    document.getElementById('resultado').style.display = "none"
+    document.getElementById('principal').style.display = "block"
+}
